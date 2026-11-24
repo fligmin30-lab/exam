@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Футер</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f2f5f9;
+        }
+
+        .footer {
+            margin-top: auto;
+            padding: 45px 55px;
+            background: #1b2430;
+            color: #b9c4d0;
+        }
+
+        .footer-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 35px;
+        }
+
+        .logo {
+            color: #ffffff;
+            font-size: 26px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: #4da3ff;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .links h3 {
+            color: #ffffff;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .links ul {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            list-style: none;
+        }
+
+        .links a {
+            color: #b9c4d0;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            color: #4da3ff;
+            text-decoration: underline;
+        }
+
+        .copy {
+            align-self: center;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: right;
+        }
+
+        @media (max-width: 800px) {
+            .footer {
+                padding: 30px 20px;
+            }
+
+            .footer-wrap {
+                flex-direction: column;
+            }
+
+            .copy {
+                align-self: flex-start;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer class="footer">
+        <div class="footer-wrap">
+            <a class="logo" href="#">Web<span>Tech</span></a>
+
+            <nav class="links">
+                <h3>Компанія</h3>
+                <ul>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Наша команда</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </nav>
+
+            <nav class="links">
+                <h3>Послуги</h3>
+                <ul>
+                    <li><a href="#">Розробка сайтів</a></li>
+                    <li><a href="#">Веб-дизайн</a></li>
+                    <li><a href="#">Підтримка</a></li>
+                </ul>
+            </nav>
+
+            <nav class="links">
+                <h3>Ресурси</h3>
+                <ul>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Документація</a></li>
+                    <li><a href="#">Питання та відповіді</a></li>
+                </ul>
+            </nav>
+
+            <p class="copy">© 2026 WebTech.<br>Усі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>
