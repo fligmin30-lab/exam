@@ -5,38 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Футер</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            font-family: "Segoe UI", Arial, sans-serif;
-            background: #f2f5f9;
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
 
         .footer {
             margin-top: auto;
-            padding: 45px 55px;
+            padding: 40px 50px;
             background: #1b2430;
-            color: #b9c4d0;
         }
 
         .footer-wrap {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            flex-wrap: wrap;
-            gap: 35px;
+            gap: 30px;
         }
 
         .logo {
             color: #ffffff;
-            font-size: 26px;
+            font-size: 24px;
             font-weight: bold;
             text-decoration: none;
         }
@@ -45,24 +37,20 @@
             color: #4da3ff;
         }
 
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
         .links h3 {
+            margin: 0 0 12px;
             color: #ffffff;
             font-size: 15px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
 
         .links ul {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
+            margin: 0;
+            padding: 0;
             list-style: none;
+        }
+
+        .links li {
+            margin-bottom: 8px;
         }
 
         .links a {
@@ -71,31 +59,10 @@
             text-decoration: none;
         }
 
-        .links a:hover {
-            color: #4da3ff;
-            text-decoration: underline;
-        }
-
         .copy {
-            align-self: center;
+            margin: 0;
+            color: #b9c4d0;
             font-size: 14px;
-            line-height: 1.5;
-            text-align: right;
-        }
-
-        @media (max-width: 800px) {
-            .footer {
-                padding: 30px 20px;
-            }
-
-            .footer-wrap {
-                flex-direction: column;
-            }
-
-            .copy {
-                align-self: flex-start;
-                text-align: left;
-            }
         }
     </style>
 </head>
@@ -131,7 +98,7 @@
                 </ul>
             </nav>
 
-            <p class="copy">© 2026 WebTech.<br>Усі права захищені.</p>
+            <p class="copy">© 2026 WebTech. Усі права захищені.</p>
         </div>
     </footer>
 </body>
